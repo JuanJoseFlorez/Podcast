@@ -1,0 +1,133 @@
+header {
+    width: 100%;
+    height: 45px;
+    top: 0;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    nav {
+        .menu {
+            padding-top: 3px;
+            ul {
+                /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
+                width: 100%;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                overflow: hidden;
+                list-style: none;
+                background: $blue;
+                height: 0px;
+                transition: height 0.5s ease;
+                li {
+                    position: relative;
+                    &:hover {
+                        background: #5a5a5a;
+                    }
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 16px 5%;
+                        line-height: 28px;
+                        display: block;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            input[type="checkbox"] {
+                &:checked ~ ul {
+                    height: 240px;
+                    transition: height 0.5s ease-in-out;
+                    -moz-transition: height 0.5s ease-in-out;
+                    -o-transition: height 0.5s ease-in-out;
+                    -webkit-transition: height 0.5s ease-in-out;
+                }
+            }
+            input {
+                display: block;
+                width: 40px;
+                height: 32px;
+                opacity: 0;
+                z-index: 2;
+                position: absolute;
+                &:checked ~ span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(2px, 1px);
+                    &:nth-last-child(3) {
+                        opacity: 0;
+                        transform: rotate(0deg) scale(0.2, 0.2);
+                    }
+                    &:nth-last-child(2) {
+                        transform: rotate(-45deg) translate(1px, 0px);
+                    }
+                }
+            }
+            span {
+                display: block;
+                width: 25px;
+                height: 2.5px;
+                margin-bottom: 6.5px;
+                position: relative;
+                background: #000;
+                z-index: 1;
+                transform-origin: 3px 0px;
+                transition: transform 0.5s ease, opacity 0.55s ease;
+                &:first-child {
+                    transform-origin: 0% 0%;
+                }
+                &:nth-last-child(2) {
+                    transform-origin: 0% 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    header {
+        height: 55px;
+        nav {
+            display: flex;
+            align-items: center;
+            .menu {
+                ul {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    overflow: hidden;
+                    background: unset;
+                    height: unset;
+                    li {
+                        padding: 5px 10px;
+                        display: inline-block;
+                        &:hover {
+                            background: unset;
+                        }
+                        a {
+                            padding: unset;
+                            line-height: unset;
+                            font-size: 1em;
+                            color: $text;
+                            &:hover {
+                                color: $textHover;
+                                text-decoration-line: line-through;
+                            }
+                            &:active{
+                                color: $textActive;
+                                text-decoration-line: line-through;
+                            }
+                        }
+                    }
+                }
+                input{
+                    display: none;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
