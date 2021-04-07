@@ -22,7 +22,7 @@ header {
                 li {
                     position: relative;
                     &:hover {
-                        background: #5a5a5a;
+                        background: $textHover;
                     }
                     a {
                         position: relative;
