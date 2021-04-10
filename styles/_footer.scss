@@ -1,6 +1,8 @@
 footer {
     padding: 5% 0%;
     background-color: #FFF;
+    display: flex;
+    flex-flow: column;
     p {
         font-size: 1em;
         color: $text;
@@ -16,6 +18,17 @@ footer {
             font-size: 1em;
             color: $text;
             line-height: 28px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer{
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 2% 7%;
+        .icons-footer{
+            width: 10%;
+            padding: 0%;
         }
     }
 }

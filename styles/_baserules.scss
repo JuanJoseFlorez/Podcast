@@ -10,3 +10,19 @@
 p,h1,h2,h3,h4,h5,h6{
     color: $text;
 }
+p{
+    font-family: $IBMPlexMono;
+    font-weight: 400;
+}
+h2{
+    font-family: $IBMPlexSans;
+    font-weight: 400;
+}
+a{
+    font-family: $IBMPlexMono;
+    font-weight: 500;
+}
+h3{
+    font-family: $IBMPlexSans;
+    font-weight: 600;
+}
