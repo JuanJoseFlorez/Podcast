@@ -17,7 +17,8 @@ header {
   top: 0;
   padding: 10px 5%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #FFF; }
   header nav .menu {
     padding-top: 3px; }
     header nav .menu ul {
@@ -114,7 +115,8 @@ header {
       header nav .menu span {
         display: none; } }
 #inicio {
-  padding: 5% 5%; }
+  padding: 5% 5%;
+  background-color: #FFF; }
   #inicio h2 {
     font-size: 4em;
     letter-spacing: 0px; }
@@ -154,7 +156,8 @@ header {
     margin-bottom: 4%; }
 
 #de-donde-venimos {
-  padding: 0% 7%; }
+  padding: 0% 7%;
+  background-color: #FFF; }
   #de-donde-venimos img {
     position: relative;
     width: 100%;
@@ -173,24 +176,27 @@ header {
     line-height: 22px;
     margin-bottom: 20%; }
 
-#invitados h2 {
-  font-size: 3em;
-  letter-spacing: 0px;
-  color: #060A24;
-  padding: 0% 5%;
-  margin-bottom: 5%; }
-#invitados .images {
-  width: 100%;
-  display: flex;
-  flex-flow: column; }
-  #invitados .images img {
+#invitados {
+  background-color: #FFF; }
+  #invitados h2 {
+    font-size: 3em;
+    letter-spacing: 0px;
+    color: #060A24;
+    padding: 0% 5%;
+    margin-bottom: 5%; }
+  #invitados .images {
     width: 100%;
-    margin: unset; }
+    display: flex;
+    flex-flow: column; }
+    #invitados .images img {
+      width: 100%;
+      margin: unset; }
 
 #temas {
   margin-top: 9%;
   padding: 0% 5%;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+  background-color: #FFF; }
   #temas h2 {
     font-size: 3em;
     letter-spacing: 0px;
@@ -236,7 +242,8 @@ header {
       color: #fff; }
 
 footer {
-  padding: 5% 0%; }
+  padding: 5% 0%;
+  background-color: #FFF; }
   footer p {
     font-size: 1em;
     color: #060A24;
