@@ -1,0 +1,143 @@
+#inicio {
+    padding: 5% 5%;
+    h2 {
+        font-size: 4em;
+        letter-spacing: 0px;
+    }
+    span {
+        text-decoration-line: line-through;
+    }
+    #punto {
+        text-decoration-line: none;
+        color: $blue;
+    }
+    p {
+        font-size: 1em;
+        line-height: 24px;
+        letter-spacing: 0px;
+        margin-top: 3%;
+        margin-bottom: 7%;
+    }
+    a {
+        font-size: 1em;
+        text-align: center;
+        line-height: 22px;
+        color: $text;
+        text-decoration: none;
+        display: block;
+        padding: 3% 30%;
+        background-color: $textHover;
+        &:hover {
+            background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+            color: #fff;
+        }
+    }
+}
+#episodios {
+    width: 100%;
+    clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0 100%);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    padding: 20% 5% 50%;
+    h2 {
+        font-size: 3em;
+        letter-spacing: 0px;
+        color: #fff;
+        margin-bottom: 4%;
+    }
+}
+#de-donde-venimos {
+    padding: 0% 7%;
+    img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: -35%;
+    }
+    h2 {
+        font-size: 3em;
+        letter-spacing: 0px;
+        line-height: 42px;
+        color: $text;
+        margin: 5% 0;
+    }
+    p {
+        font-size: 1em;
+        color: $text;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-bottom: 20%;
+    }
+}
+#invitados {
+    h2 {
+        font-size: 3em;
+        letter-spacing: 0px;
+        color: $text;
+        padding: 0% 5%;
+        margin-bottom: 5%;
+    }
+    .images {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        img {
+            width: 100%;
+            margin: unset;
+        }
+    }
+}
+#temas {
+    margin-top: 9%;
+    padding: 0% 5%;
+    margin-bottom: 10%;
+    h2 {
+        font-size: 3em;
+        letter-spacing: 0px;
+        color: $text;
+        margin-bottom: 5%;
+    }
+    .contenedor {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: unset;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: $text;
+            letter-spacing: 0;
+            padding: 1% 15%;
+            text-align: center;
+        }
+    }
+}
+#novedades{
+    clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding: 20% 5%;
+    h2{
+        font-size: 3em;
+        letter-spacing: 0px;
+        color: #FFF;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    a {
+        font-size: 1em;
+        text-align: center;
+        line-height: 22px;
+        color: $text;
+        text-decoration: none;
+        display: block;
+        padding: 3% 0%;
+        background-color: $textHover;
+        &:hover {
+            background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+            color: #fff;
+        }
+    }
+}
