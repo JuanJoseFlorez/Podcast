@@ -215,7 +215,8 @@ header {
       color: #060A24;
       letter-spacing: 0;
       padding: 1% 15%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 10%; }
 
 #novedades {
   clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0 100%);
